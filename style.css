@@ -5,6 +5,7 @@
 
 body {
     overflow: hidden;
+    animation: shakeBody 2s linear infinite;
 }
 
 .sky {
@@ -82,5 +83,17 @@ body {
     }
     100% {
         transform: translateY(-5px);
+    }
+}
+
+@keyframes shakeBody {
+    0%{
+        transform: translateY(-50px);
+    }
+    50%{
+        transform: translateY(50px);
+    }
+    100%{
+        transform: translateY(-50px);
     }
 }
